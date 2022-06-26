@@ -9,8 +9,8 @@ const App = () => {
   // Masukkan Header dan Contact ke dalam div App
   return (
     <div className="App">
-      <Header/>
-      <div >
+      <div>
+        <Header/>
         <Contact props = {contacts[0]}/>
         <Contact props = {contacts[1]}/>
         <Contact props = {contacts[2]}/>
