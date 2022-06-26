@@ -7,7 +7,7 @@ const Contact = (props) => {
     const {name, phone, email, photo} = props;
     return (
         <div>
-        <img src={photo}></img>
+        <img src={photo} />
         <h1>{name}</h1>
         <p>{phone}</p>
         <p>{email}</p>

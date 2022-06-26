@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <div>
+      <div >
         <Contact props = {contacts[0]}/>
         <Contact props = {contacts[1]}/>
         <Contact props = {contacts[2]}/>
