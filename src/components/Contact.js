@@ -2,9 +2,16 @@
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 import React from 'react';
 
-const Contact = () => {
+const Contact = (props) => {
+
+    const {name, phone, email, photo} = props;
     return (
-        <></>
+        <>
+        <img src={photo}></img>
+        <h1>{name}</h1>
+        <p>{phone}</p>
+        <p>{email}</p>
+        </>
     )
 }
 
