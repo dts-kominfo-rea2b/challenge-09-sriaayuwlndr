@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './components/Contact';
+import Header from './components/Header';
 
 // Uncomment untuk memuat daftar kontak
 import contacts from './data/contacts.json';
@@ -9,13 +10,14 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <ul>
-        {
-          contacts.map((item) => {
-            return <Contact props = {item}/>
-          })
-        }
-      </ul>
+      <div>
+        <Contact props = {contacts[0]}/>
+        <Contact props = {contacts[1]}/>
+        <Contact props = {contacts[2]}/>
+        <Contact props = {contacts[3]}/>
+        <Contact props = {contacts[4]}/>
+        <Contact props = {contacts[5]}/>
+      </div>
     </div>
   );
 }
